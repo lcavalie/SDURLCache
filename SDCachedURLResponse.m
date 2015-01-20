@@ -40,7 +40,7 @@
     [coder encodeDataObject:self.response.data];
     [coder encodeObject:self.response.response forKey:@"response"];
     [coder encodeObject:self.response.userInfo forKey:@"userInfo"];
-    [coder encodeInt:self.response.storagePolicy forKey:@"storagePolicy"];
+    [coder encodeInteger:self.response.storagePolicy forKey:@"storagePolicy"];
 }
 
 - (id)initWithCoder:(NSCoder *)coder
